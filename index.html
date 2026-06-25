@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paris Heatwave Memes 2026 — Sweaty Mime Community</title>
+  <meta name="description" content="A memes-only community celebrating the Paris heatwave 2026 and the viral sweaty mime. For entertainment and laughs only. Join the fun on X." />
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Paris Heatwave Memes 2026 — Sweaty Mime Community" />
+  <meta property="og:description" content="The internet's home for Paris heatwave memes. Join the sweaty mime community on X. For entertainment only." />
+  <meta property="og:image"       content="https://i.ibb.co/Cs0wMfzF/Gemini-Generated-Image-9da4ts9da4ts9da4.png" />
+  <meta property="og:url"         content="https://mimemelt.xyz" />
+  <meta property="og:site_name"   content="MimeMelt.xyz" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Paris Heatwave Memes 2026 — Sweaty Mime Community" />
+  <meta name="twitter:description" content="The internet's home for Paris heatwave memes. For entertainment only." />
+  <meta name="twitter:image"       content="https://i.ibb.co/Cs0wMfzF/Gemini-Generated-Image-9da4ts9da4ts9da4.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0d0d0d;
+      --orange:  #FF6200;
+      --yellow:  #FFD000;
+      --red:     #FF2D2D;
+      --parch:   #F5EDD8;
+      --muted:   #5A4E3C;
+      --border:  #201508;
+      --impact:  'Anton', sans-serif;
+      --mono:    'JetBrains Mono', monospace;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--parch);
+      font-family: var(--mono);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* ── Heat grid ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,98,0,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,98,0,0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Top ticker ── */
+    .ticker {
+      position: relative;
+      z-index: 10;
+      background: var(--red);
+      color: #fff;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 7px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .ticker-inner {
+      display: inline-block;
+      animation: marquee 22s linear infinite;
+      padding-left: 100%;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    .ticker-sep { margin: 0 20px; opacity: 0.55; }
+
+    /* ── Main layout ── */
+    main {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 24px;
+      gap: 0;
+    }
+
+    /* ── Eyebrow ── */
+    .eyebrow {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .eyebrow::before, .eyebrow::after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 32px;
+      background: var(--orange);
+      opacity: 0.35;
+    }
+
+    /* ── Headline ── */
+    .headline {
+      font-family: var(--impact);
+      font-size: clamp(2rem, 5.5vw, 3.8rem);
+      line-height: 0.96;
+      letter-spacing: 0.015em;
+      text-transform: uppercase;
+      color: var(--parch);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .headline .heat {
+      display: inline-block;
+      color: var(--orange);
+      animation: shimmer 3s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { color: var(--orange); filter: blur(0); }
+      33%       { color: var(--yellow); filter: blur(0.4px); }
+      66%       { color: var(--red);    filter: blur(0); }
+    }
+
+    .subtext {
+      font-size: 0.75rem;
+      color: #F5EDD8;
+      text-align: center;
+      letter-spacing: 0.03em;
+      line-height: 1.6;
+      max-width: 500px;
+      margin-bottom: 24px;
+    }
+
+    /* ── Image block ── */
+    .image-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .meme-frame {
+      position: relative;
+      width: clamp(200px, 28vw, 320px);
+      aspect-ratio: 1 / 1;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1.5px solid var(--orange);
+      box-shadow:
+        0 0 0 1px rgba(255,208,0,0.12),
+        0 0 36px 6px rgba(255,98,0,0.42),
+        0 0 80px 12px rgba(255,98,0,0.18);
+    }
+
+    .meme-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .meme-fallback {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      background: linear-gradient(135deg, #1a0900 0%, #2e1200 50%, #1a0900 100%);
+      position: absolute;
+      inset: 0;
+    }
+
+    .temp-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(13,13,13,0.88);
+      border: 1px solid var(--red);
+      border-radius: 3px;
+      padding: 3px 8px;
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--red);
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Registry strip ── */
+    .registry {
+      width: clamp(200px, 28vw, 320px);
+      background: #110c05;
+      border: 1.5px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 4px 4px;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .reg-label {
+      font-size: 0.58rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .reg-sep { color: var(--border); font-size: 0.58rem; }
+
+    .reg-file {
+      font-size: 0.62rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .reg-id-row {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-left: auto;
+    }
+
+    .reg-id {
+      font-size: 0.62rem;
+      font-weight: 700;
+      color: var(--yellow);
+      white-space: nowrap;
+    }
+
+    .clip-btn {
+      background: none;
+      border: 1px solid rgba(255,208,0,0.2);
+      border-radius: 3px;
+      padding: 2px 6px;
+      cursor: pointer;
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      color: var(--parch);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      transition: border-color 0.15s, background 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+
+    .clip-btn:hover {
+      border-color: var(--yellow);
+      background: rgba(255,208,0,0.06);
+    }
+
+    .clip-btn.copied {
+      border-color: #22c55e;
+      color: #22c55e;
+    }
+
+    /* ── CTA button ── */
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--orange);
+      color: #fff;
+      font-family: var(--impact);
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 13px 30px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+      box-shadow: 0 4px 24px rgba(255,98,0,0.35);
+    }
+
+    .cta-btn:hover {
+      background: var(--yellow);
+      color: #0d0d0d;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 36px rgba(255,208,0,0.3);
+    }
+
+    .cta-btn:active { transform: translateY(0); }
+
+    .cta-x {
+      font-style: normal;
+      font-size: 0.95rem;
+    }
+
+    /* ── Footer ── */
+    footer {
+      position: relative;
+      z-index: 1;
+      flex-shrink: 0;
+      text-align: center;
+      padding: 14px 20px;
+      font-size: 0.57rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-top: 1px solid var(--border);
+      line-height: 2;
+    }
+
+    footer a {
+      color: var(--orange);
+      text-decoration: none;
+      letter-spacing: 0.1em;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    /* ── Privacy modal ── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal-box {
+      background: #141008;
+      border: 1px solid var(--orange);
+      border-radius: 6px;
+      max-width: 620px;
+      width: 100%;
+      max-height: 80vh;
+      overflow-y: auto;
+      padding: 32px;
+      position: relative;
+      font-size: 0.75rem;
+      line-height: 1.8;
+      color: var(--parch);
+    }
+
+    .modal-box h2 {
+      font-family: var(--impact);
+      font-size: 1.4rem;
+      letter-spacing: 0.08em;
+      color: var(--orange);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+
+    .modal-box h3 {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin: 18px 0 6px;
+    }
+
+    .modal-box p { margin-bottom: 10px; color: #c8bfaa; }
+
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      background: none;
+      border: 1px solid var(--muted);
+      border-radius: 3px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      padding: 4px 10px;
+      cursor: pointer;
+      letter-spacing: 0.1em;
+    }
+
+    .modal-close:hover { border-color: var(--orange); color: var(--orange); }
+
+    /* ── Responsive relaxation ── */
+    @media (max-width: 540px) {
+      .headline { font-size: 1.9rem; }
+      .meme-frame, .registry { width: 86vw; }
+      .reg-id-row { margin-left: 0; }
+      .registry { flex-direction: column; align-items: flex-start; gap: 5px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .headline .heat { animation: none; color: var(--orange); }
+      .ticker-inner   { animation: none; }
+    }
+
+    /* ── Top nav ── */
+    .topnav {
+      position: relative;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 28px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(13,13,13,0.95);
+      flex-shrink: 0;
+    }
+
+    .topnav-brand {
+      font-family: var(--impact);
+      font-size: 1.1rem;
+      letter-spacing: 0.12em;
+      color: var(--orange);
+      text-decoration: none;
+    }
+
+    .topnav-center {
+      font-size: 0.52rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (max-width: 600px) { .topnav-center { display: none; } }
+
+    .topnav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .topnav-links a {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .topnav-links a:hover { color: var(--orange); }
+
+    /* ── Share bar ── */
+    .share-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .share-label {
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .share-btn {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 5px 12px;
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--parch);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .share-btn:hover { border-color: var(--orange); color: var(--orange); }
+    .share-btn.green-flash { border-color: #22c55e; color: #22c55e; }
+
+    /* ── Gallery section ── */
+    .gallery-section {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px 60px;
+    }
+
+    .gallery-heading {
+      font-family: var(--impact);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--parch);
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .gallery-sub {
+      font-size: 0.65rem;
+      color: var(--muted);
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 640px) {
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .topnav-links { gap: 14px; }
+    }
+
+    @media (max-width: 400px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+
+    .gallery-card {
+      background: #110c05;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+
+    .gallery-card:hover {
+      border-color: var(--orange);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(255,98,0,0.2);
+    }
+
+    .gallery-card-img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+      background: #1a0900;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-card-body {
+      padding: 10px 12px 12px;
+    }
+
+    .gallery-card-tag {
+      font-size: 0.55rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 4px;
+    }
+
+    .gallery-card-caption {
+      font-size: 0.68rem;
+      color: var(--parch);
+      line-height: 1.5;
+    }
+
+    .gallery-card-meta {
+      font-size: 0.55rem;
+      color: var(--muted);
+      margin-top: 6px;
+      letter-spacing: 0.06em;
+    }
+
+    .divider {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP NAV -->
+  <nav class="topnav" aria-label="Site navigation">
+    <a href="#" class="topnav-brand">🎭 MIMEMELT</a>
+    <span class="topnav-center">For Entertainment &amp; Memes Only</span>
+    <ul class="topnav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Memes</a></li>
+      <li><a href="https://x.com/i/communities/2015756992158044574" target="_blank" rel="noopener">Join</a></li>
+      <li><a href="#" onclick="document.getElementById('privacyModal').classList.add('open');return false;">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <span class="ticker-inner">
+      🌡️ ALERTE CANICULE ACTIVE
+      <span class="ticker-sep">·</span>
+      PARIS AT 45°C
+      <span class="ticker-sep">·</span>
+      MIME MELT STATUS: HILARIOUS
+      <span class="ticker-sep">·</span>
+      🔥 TREND RANK: #1 WORLDWIDE
+      <span class="ticker-sep">·</span>
+      COMMUNITY GOING VIRAL
+      <span class="ticker-sep">·</span>
+      🌡️ ALERTE CANICULE ACTIVE
+      <span class="ticker-sep">·</span>
+      PARIS AT 45°C
+      <span class="ticker-sep">·</span>
+      MIME MELT STATUS: HILARIOUS
+      <span class="ticker-sep">·</span>
+      🔥 TREND RANK: #1 WORLDWIDE
+      <span class="ticker-sep">·</span>
+      COMMUNITY GOING VIRAL
+      <span class="ticker-sep">·</span>
+    </span>
+  </div>
+
+  <!-- MAIN CONSOLE -->
+  <main id="home">
+
+    <p class="eyebrow">Paris Heatwave 2026 &nbsp;·&nbsp; Community Meme Registry</p>
+
+    <h1 class="headline">
+      PARIS IS <span class="heat">BOILING</span> OVER.<br>
+      THE TREND IS SURGING PAST<br>
+      CRITICAL TEMPERATURES.
+    </h1>
+
+    <p class="subtext">
+      Room on the terrace is evaporating at a historic clip.<br>
+      Paris is hitting 45°C, the pavement is roasting, and the atmospheric pressure is building up for a serious pump.<br>
+      (For the love of trends and memes).
+    </p>
+
+    <!-- IMAGE + REGISTRY -->
+    <div class="image-block">
+      <div class="meme-frame">
+        <div class="meme-fallback" id="fallback">🎭</div>
+        <img
+          src="https://i.ibb.co/Cs0wMfzF/Gemini-Generated-Image-9da4ts9da4ts9da4.png"
+          alt="Sweaty mime in 45°C Paris heat — the original viral meme"
+          onload="document.getElementById('fallback').style.display='none';"
+          onerror="this.style.display='none';"
+        />
+        <div class="temp-badge">⚠️ 45°C</div>
+      </div>
+
+      <div class="registry" role="region" aria-label="File metadata">
+        <span class="reg-label">Meme Registry</span>
+        <span class="reg-sep">:</span>
+        <span class="reg-file">📁 sweaty_mime_45c.png</span>
+        <span class="reg-sep">|</span>
+        <div class="reg-id-row">
+          <span style="font-size:0.58rem;color:var(--muted);">Meme ID:</span>
+          <span class="reg-id" id="assetId">HqZ12xP9oT4r5u2v7w9x6y1z</span>
+          <button
+            class="clip-btn"
+            id="clipBtn"
+            onclick="copyId()"
+            title="Copy Protocol ID"
+            aria-label="Copy Protocol ID to clipboard"
+          >
+            <span id="clipIcon">📋</span>
+            <span id="clipLabel">COPY</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <a
+      href="https://x.com/i/communities/2015756992158044574"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="cta-btn"
+      aria-label="Join the X Community"
+    >
+      <em class="cta-x">𝕏</em>
+      JOIN X COMMUNITY
+    </a>
+
+    <!-- SHARE BAR -->
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a
+        class="share-btn"
+        href="https://x.com/intent/tweet?text=Paris+is+hitting+45°C+and+the+mimes+are+melting+🎭🔥&url=https://mimemelt.xyz"
+        target="_blank"
+        rel="noopener"
+      >𝕏 Post</a>
+      <button class="share-btn" onclick="copyLink(this)">🔗 Copy Link</button>
+    </div>
+
+  </main>
+
+  <hr class="divider" />
+
+  <!-- MEMES GALLERY -->
+  <section class="gallery-section" id="gallery" aria-label="Memes Gallery">
+    <h2 class="gallery-heading">🔥 The Meme Gallery</h2>
+    <p class="gallery-sub">Paris Heatwave 2026 · Community Favourites · For Entertainment Only</p>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="https://i.ibb.co/RGDjMZ9T/Gemini-Generated-Image-6gvgwk6gvgwk6gvg.png" alt="Mime cooling off with a fan in the Paris heatwave" loading="lazy" />
+        </div>
+        <div class="gallery-card-body">
+          <div class="gallery-card-tag">🌬️ Fan Inside</div>
+          <div class="gallery-card-caption">Maximum effort, zero air con. The mime finds a way.</div>
+          <div class="gallery-card-meta">📅 June 2026 &nbsp;·&nbsp; 🔥 5.6M impressions</div>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="https://i.ibb.co/21SkBvQz/Gemini-Generated-Image-2p08wt2p08wt2p08-1.png" alt="Sweaty mime at the Louvre in 45°C heat" loading="lazy" />
+        </div>
+        <div class="gallery-card-body">
+          <div class="gallery-card-tag">🏛️ The Louvre</div>
+          <div class="gallery-card-caption">Even the Mona Lisa is sweating. Our mime fits right in.</div>
+          <div class="gallery-card-meta">📅 June 2026 &nbsp;·&nbsp; 🔥 4.1M impressions</div>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="https://i.ibb.co/jvLH9F5G/Gemini-Generated-Image-nylaqunylaqunyla.png" alt="Mime performing at the Arc de Triomphe in the heatwave" loading="lazy" />
+        </div>
+        <div class="gallery-card-body">
+          <div class="gallery-card-tag">🏛️ Arc de Triomphe</div>
+          <div class="gallery-card-caption">Triumphing over nothing. Melting over everything.</div>
+          <div class="gallery-card-meta">📅 June 2026 &nbsp;·&nbsp; 🔥 3.3M impressions</div>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="https://i.ibb.co/993YN2zX/Gemini-Generated-Image-ryth5ryth5ryth5r.png" alt="Mime on the Paris Metro in extreme heat" loading="lazy" />
+        </div>
+        <div class="gallery-card-body">
+          <div class="gallery-card-tag">🚇 The Metro</div>
+          <div class="gallery-card-caption">Underground, overcrowded, 47°C. The mime persists.</div>
+          <div class="gallery-card-meta">📅 June 2026 &nbsp;·&nbsp; 🔥 2.8M impressions</div>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="https://i.ibb.co/dsQKScrF/Gemini-Generated-Image-70bzn370bzn370bz.png" alt="Mime melting outside a Paris pastry shop in the heat" loading="lazy" />
+        </div>
+        <div class="gallery-card-body">
+          <div class="gallery-card-tag">🥐 Pastry Shop</div>
+          <div class="gallery-card-caption">The croissants are fine. The mime is not. Life is unfair.</div>
+          <div class="gallery-card-meta">📅 June 2026 &nbsp;·&nbsp; 🔥 1.9M impressions</div>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="https://i.ibb.co/m5xzm6jJ/Gemini-Generated-Image-wn2j0lwn2j0lwn2j.png" alt="Mime wilting in the Tuileries Garden heatwave" loading="lazy" />
+        </div>
+        <div class="gallery-card-body">
+          <div class="gallery-card-tag">🌳 Tuileries Garden</div>
+          <div class="gallery-card-caption">Seeking shade. Finding none. A classic Paris summer experience.</div>
+          <div class="gallery-card-meta">📅 June 2026 &nbsp;·&nbsp; 🔥 12.4M impressions</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <strong style="color:var(--parch);letter-spacing:0.15em;">MIMEMELT.XYZ</strong>
+      &nbsp;·&nbsp; Paris Heatwave Memes Community &nbsp;·&nbsp; For Entertainment &amp; Memes Only
+    </div>
+    <div style="margin-top:4px;">
+      Not affiliated with X Corp, the City of Paris, or any actual mime.
+      &nbsp;·&nbsp; Contact: <a href="mailto:hello@mimemelt.xyz">hello@mimemelt.xyz</a>
+      &nbsp;·&nbsp;
+      <a href="#" onclick="document.getElementById('privacyModal').classList.add('open');return false;">Privacy Policy</a>
+      &nbsp;·&nbsp;
+      <a href="#" onclick="document.getElementById('termsModal').classList.add('open');return false;">Terms of Use</a>
+    </div>
+    <div style="margin-top:4px;">© 2026 MimeMelt.xyz — All rights reserved.</div>
+  </footer>
+
+  <!-- PRIVACY POLICY MODAL -->
+  <div class="modal-overlay" id="privacyModal" onclick="if(event.target===this)this.classList.remove('open')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="document.getElementById('privacyModal').classList.remove('open')">✕ CLOSE</button>
+      <h2>Privacy Policy</h2>
+      <p>Last updated: June 2026</p>
+
+      <h3>1. Who We Are</h3>
+      <p>MimeMelt.xyz is an entertainment and memes-only website. We do not sell products, collect payments, or offer financial services of any kind.</p>
+
+      <h3>2. Data We Collect</h3>
+      <p>We do not collect, store, or process any personal data from visitors. This site contains no sign-up forms, login systems, or user accounts. The only interactive element is a clipboard copy button which operates entirely in your browser and sends no data to any server.</p>
+
+      <h3>3. Third-Party Links</h3>
+      <p>This site contains a link to an X (Twitter) Community. When you click that link, you leave our site and are subject to X's own Privacy Policy and Terms of Service. We have no control over X's data practices.</p>
+
+      <h3>4. Cookies & Tracking</h3>
+      <p>We do not use cookies, analytics trackers, pixels, or any third-party tracking scripts. Google Fonts are loaded for typography; this may result in a request to Google's servers subject to their privacy policy.</p>
+
+      <h3>5. Children's Privacy</h3>
+      <p>This site is not directed at children under 13. We do not knowingly collect data from minors.</p>
+
+      <h3>6. Changes to This Policy</h3>
+      <p>We may update this policy occasionally. Continued use of the site constitutes acceptance of any updates.</p>
+
+      <h3>7. Contact</h3>
+      <p>Questions? Email us at <a href="mailto:hello@mimemelt.xyz" style="color:var(--orange);">hello@mimemelt.xyz</a></p>
+    </div>
+  </div>
+
+  <!-- TERMS OF USE MODAL -->
+  <div class="modal-overlay" id="termsModal" onclick="if(event.target===this)this.classList.remove('open')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="document.getElementById('termsModal').classList.remove('open')">✕ CLOSE</button>
+      <h2>Terms of Use</h2>
+      <p>Last updated: June 2026</p>
+
+      <h3>1. Entertainment Only</h3>
+      <p>MimeMelt.xyz is a memes and entertainment website. All content is created for humour and community engagement. Nothing on this site constitutes financial, legal, or professional advice of any kind.</p>
+
+      <h3>2. Intellectual Property</h3>
+      <p>All original content on this site is owned by MimeMelt.xyz. Meme images are used for entertainment purposes. If you have a copyright concern, contact us at hello@mimemelt.xyz.</p>
+
+      <h3>3. No Warranties</h3>
+      <p>This site is provided "as is" for entertainment. We make no warranties about uptime, accuracy, or fitness for any purpose.</p>
+
+      <h3>4. External Links</h3>
+      <p>We link to an X Community for meme enthusiasts. We are not responsible for content on external platforms.</p>
+
+      <h3>5. Limitation of Liability</h3>
+      <p>MimeMelt.xyz is not liable for any damages arising from use of this site. It's memes. Have fun.</p>
+
+      <h3>6. Governing Law</h3>
+      <p>These terms are governed by applicable law. Any disputes shall be resolved in good faith.</p>
+
+      <h3>7. Contact</h3>
+      <p>Questions? Email us at <a href="mailto:hello@mimemelt.xyz" style="color:var(--orange);">hello@mimemelt.xyz</a></p>
+    </div>
+  </div>
+
+  <script>
+    function copyLink(btn) {
+      const url = 'https://mimemelt.xyz';
+      const orig = btn.textContent;
+      const done = () => {
+        btn.textContent = '✅ Copied!';
+        btn.classList.add('green-flash');
+        setTimeout(() => { btn.textContent = orig; btn.classList.remove('green-flash'); }, 1500);
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(url).then(done).catch(() => done());
+      } else { done(); }
+    }
+
+    function copyId() {
+      const id   = 'HqZ12xP9oT4r5u2v7w9x6y1z';
+      const btn  = document.getElementById('clipBtn');
+      const icon = document.getElementById('clipIcon');
+      const lbl  = document.getElementById('clipLabel');
+
+      const confirm = () => {
+        btn.classList.add('copied');
+        icon.textContent = '✅';
+        lbl.textContent  = 'BOILING!';
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          icon.textContent = '📋';
+          lbl.textContent  = 'COPY';
+        }, 1500);
+      };
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(id).then(confirm).catch(fallback);
+      } else {
+        fallback();
+      }
+
+      function fallback() {
+        const el = document.createElement('textarea');
+        el.value = id;
+        el.style.cssText = 'position:fixed;opacity:0;top:0;left:0;';
+        document.body.appendChild(el);
+        el.select();
+        try { document.execCommand('copy'); } catch(e) {}
+        document.body.removeChild(el);
+        confirm();
+      }
+    }
+  </script>
+
+</body>
+</html>
